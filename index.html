@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +32,14 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
+        .greeting {
+            font-size: 50px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+        }
+
         .time {
             font-size: 72px;
             font-weight: 900;
@@ -55,20 +64,28 @@
         }
 
         @media (max-width: 768px) {
+            .greeting {
+                font-size: 32px;
+            }
+
             .time {
                 font-size: 48px;
             }
+
             .date {
                 font-size: 24px;
             }
+
             .day {
                 font-size: 18px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
+        <div class="greeting" id="greeting">Good Morning</div>
         <div class="time" id="time">00:00:00</div>
         <div class="date" id="date">Loading...</div>
         <div class="day" id="day">Loading...</div>
@@ -77,18 +94,30 @@
     <script>
         function updateDateTime() {
             const now = new Date();
-            
+
+            // Determine greeting
+            const hour = now.getHours();
+            let greetingText;
+            if (hour >= 5 && hour < 12) {
+                greetingText = 'Good Morning';
+            } else if (hour >= 12 && hour < 18) {
+                greetingText = 'Good Afternoon';
+            } else {
+                greetingText = 'Good Evening';
+            }
+            document.getElementById('greeting').textContent = greetingText;
+
             // Format time
             const hours = String(now.getHours()).padStart(2, '0');
             const minutes = String(now.getMinutes()).padStart(2, '0');
             const seconds = String(now.getSeconds()).padStart(2, '0');
             document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`;
-            
+
             // Format date
             const options = { year: 'numeric', month: 'long', day: 'numeric' };
             const dateStr = now.toLocaleDateString('en-US', options);
             document.getElementById('date').textContent = dateStr;
-            
+
             // Format day
             const dayOptions = { weekday: 'long' };
             const dayStr = now.toLocaleDateString('en-US', dayOptions);
@@ -100,5 +129,5 @@
         setInterval(updateDateTime, 1000);
     </script>
 </body>
-</html>
 
+</html>
