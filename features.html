@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>BondBoost - Features</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13eca4",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#10221c",
+                        "text-light": "#111816",
+                        "text-dark": "#f0f4f3",
+                        "subtext-light": "#61897c",
+                        "subtext-dark": "#a3c2b8",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark transition-colors duration-200">
+    <div class="relative flex flex-col min-h-screen w-full overflow-x-hidden">
+        <!-- Navigation -->
+        <header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
+            <div class="px-4 md:px-10 lg:px-40 flex items-center justify-between py-4">
+                <a href="index.html" class="flex items-center gap-4 text-text-light dark:text-text-dark">
+                    <div class="size-8 text-primary">
+                        <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-bold leading-tight tracking-tight">BondBoost</h2>
+                </a>
+                <nav class="hidden md:flex gap-8 text-sm font-medium text-subtext-light dark:text-subtext-dark">
+                    <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+                    <a class="text-primary font-bold" href="features.html">Features</a>
+                    <a class="hover:text-primary transition-colors" href="faq.html">FAQ</a>
+                </nav>
+                <a href="https://apps.apple.com/us/app/bondboost/id6447713690"
+                    class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-text-light text-sm font-bold leading-normal transition-transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20">
+                    <span class="truncate">Download</span>
+                </a>
+            </div>
+        </header>
+
+        <main class="flex-grow">
+            <!-- Hero Section -->
+            <section class="relative py-16 md:py-24 px-4 md:px-10 lg:px-40 overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10"></div>
+                <div class="max-w-4xl mx-auto text-center relative z-10">
+                    <div class="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-green-700 dark:text-primary mb-6">
+                        <span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+                        <span>Intelligent Relationship Management</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight mb-6">
+                        Everything You Need to<br>
+                        <span class="text-primary">Stay Connected</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto">
+                        BondBoost transforms relationship maintenance from a chore into an intentional practice, helping you nurture the connections that matter most.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Quick Navigation -->
+            <section class="py-8 px-4 md:px-10 lg:px-40 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 sticky top-[73px] z-40">
+                <div class="max-w-6xl mx-auto">
+                    <div class="flex gap-4 overflow-x-auto no-scrollbar pb-2">
+                        <a href="#prioritization" class="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium whitespace-nowrap hover:bg-primary/20 transition-colors">
+                            <span class="material-symbols-outlined text-[18px]">psychology</span>
+                            Smart Prioritization
+                        </a>
+                        <a href="#tracking" class="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-subtext-light dark:text-subtext-dark text-sm font-medium whitespace-nowrap hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                            <span class="material-symbols-outlined text-[18px]">history</span>
+                            Interaction Tracking
+                        </a>
+                        <a href="#context" class="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-subtext-light dark:text-subtext-dark text-sm font-medium whitespace-nowrap hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                            <span class="material-symbols-outlined text-[18px]">person_book</span>
+                            Relationship Context
+                        </a>
+                        <a href="#dashboard" class="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-subtext-light dark:text-subtext-dark text-sm font-medium whitespace-nowrap hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                            <span class="material-symbols-outlined text-[18px]">monitoring</span>
+                            Health Dashboard
+                        </a>
+                        <a href="#reminders" class="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-subtext-light dark:text-subtext-dark text-sm font-medium whitespace-nowrap hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                            <span class="material-symbols-outlined text-[18px]">notifications_active</span>
+                            Smart Reminders
+                        </a>
+                        <a href="#privacy" class="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-subtext-light dark:text-subtext-dark text-sm font-medium whitespace-nowrap hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                            <span class="material-symbols-outlined text-[18px]">lock</span>
+                            Privacy First
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Smart Contact Prioritization -->
+            <section id="prioritization" class="py-20 px-4 md:px-10 lg:px-40 scroll-mt-32">
+                <div class="max-w-6xl mx-auto">
+                    <div class="flex flex-col md:flex-row gap-12 items-start">
+                        <div class="md:w-1/3">
+                            <div class="sticky top-40">
+                                <div class="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center text-primary mb-6">
+                                    <span class="material-symbols-outlined text-[36px]">psychology</span>
+                                </div>
+                                <h2 class="text-3xl font-black mb-4">Smart Contact Prioritization</h2>
+                                <p class="text-subtext-light dark:text-subtext-dark">
+                                    Our intelligent algorithm ensures you focus on the relationships that need your attention most.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-6">
+                            <!-- 7-Factor Algorithm -->
+                            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-100 dark:border-gray-800">
+                                <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">calculate</span>
+                                    Intelligent 7-Factor Algorithm
+                                </h3>
+                                <p class="text-subtext-light dark:text-subtext-dark mb-6">
+                                    BondBoost uses a sophisticated scoring system to prioritize your contacts based on what matters most:
+                                </p>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">schedule</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">Time Since Last Contact</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">Identifies relationships that need attention</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">trending_up</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">Interaction Success Rate</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">Rewards successful reconnections</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">star</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">Favorite Status</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">Prioritizes important relationships</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">link</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">Connection Strength</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">Values long-term relationships</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">replay</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">Recent Attempts</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">Avoids overwhelming unresponsive contacts</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">pending</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">Pending Conversations</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">Surfaces people waiting for your response</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3 sm:col-span-2">
+                                        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">person_add</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">New Relationships</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">Encourages building fresh connections</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Urgency Badges -->
+                            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-100 dark:border-gray-800">
+                                <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">label_important</span>
+                                    Color-Coded Urgency Badges
+                                </h3>
+                                <p class="text-subtext-light dark:text-subtext-dark mb-6">
+                                    Each contact receives a dynamic priority score with clear visual indicators:
+                                </p>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-4 py-2 rounded-full bg-red-100 text-red-700 text-sm font-semibold">🔴 Critical</span>
+                                    <span class="px-4 py-2 rounded-full bg-orange-100 text-orange-700 text-sm font-semibold">🟠 High</span>
+                                    <span class="px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold">🔵 Normal</span>
+                                    <span class="px-4 py-2 rounded-full bg-gray-100 text-gray-600 text-sm font-semibold">⚪ Low</span>
+                                </div>
+                            </div>
+                            <!-- Smart Selection -->
+                            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-100 dark:border-gray-800">
+                                <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">shuffle</span>
+                                    Smart Random Selection
+                                </h3>
+                                <p class="text-subtext-light dark:text-subtext-dark">
+                                    Get intelligent contact suggestions with weighted randomness — high-priority contacts appear <strong class="text-text-light dark:text-text-dark">5x more frequently</strong> than low-priority ones, maintaining variety while keeping you focused on what matters.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rich Interaction Tracking -->
+            <section id="tracking" class="py-20 px-4 md:px-10 lg:px-40 bg-white dark:bg-gray-900 scroll-mt-32">
+                <div class="max-w-6xl mx-auto">
+                    <div class="flex flex-col md:flex-row gap-12 items-start">
+                        <div class="md:w-1/3">
+                            <div class="sticky top-40">
+                                <div class="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center text-primary mb-6">
+                                    <span class="material-symbols-outlined text-[36px]">history</span>
+                                </div>
+                                <h2 class="text-3xl font-black mb-4">Rich Interaction Tracking</h2>
+                                <p class="text-subtext-light dark:text-subtext-dark">
+                                    Track every connection with precision and understand the quality of your relationships.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-6">
+                            <!-- Outcome Types -->
+                            <div class="bg-background-light dark:bg-background-dark rounded-2xl p-8 border border-gray-100 dark:border-gray-800">
+                                <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">check_circle</span>
+                                    Five Outcome Types
+                                </h3>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div class="flex items-center gap-3 p-3 rounded-lg bg-green-50 dark:bg-green-900/20">
+                                        <span class="material-symbols-outlined text-green-600">thumb_up</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">Successful</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">Had a real conversation</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3 p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20">
+                                        <span class="material-symbols-outlined text-blue-600">send</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">Sent & Waiting</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">Message sent, awaiting response</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3 p-3 rounded-lg bg-yellow-50 dark:bg-yellow-900/20">
+                                        <span class="material-symbols-outlined text-yellow-600">replay</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">Try Again Later</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">No answer or failed attempt</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-800">
+                                        <span class="material-symbols-outlined text-gray-500">skip_next</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">Skipped</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">Chose not to contact right now</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Communication Channels -->
+                            <div class="bg-background-light dark:bg-background-dark rounded-2xl p-8 border border-gray-100 dark:border-gray-800">
+                                <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">forum</span>
+                                    Seven Communication Channels
+                                </h3>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-sm">
+                                        <span class="material-symbols-outlined text-[18px]">call</span> Phone Call
+                                    </span>
+                                    <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-sm">
+                                        <span class="material-symbols-outlined text-[18px]">sms</span> Text Message
+                                    </span>
+                                    <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-sm">
+                                        <span class="material-symbols-outlined text-[18px]">mail</span> Email
+                                    </span>
+                                    <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-sm">
+                                        <span class="material-symbols-outlined text-[18px]">videocam</span> Video Call
+                                    </span>
+                                    <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-sm">
+                                        <span class="material-symbols-outlined text-[18px]">groups</span> In Person
+                                    </span>
+                                    <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-sm">
+                                        <span class="material-symbols-outlined text-[18px]">share</span> Social Media
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Quality Reflection -->
+                            <div class="bg-background-light dark:bg-background-dark rounded-2xl p-8 border border-gray-100 dark:border-gray-800">
+                                <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">self_improvement</span>
+                                    Quality Reflection System
+                                </h3>
+                                <p class="text-subtext-light dark:text-subtext-dark mb-6">
+                                    Go beyond just logging that you talked — capture the depth and impact of your conversations:
+                                </p>
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                    <div class="text-center p-4 rounded-xl bg-white dark:bg-gray-800">
+                                        <div class="text-2xl mb-2">⭐</div>
+                                        <p class="font-semibold text-sm">Quality Rating</p>
+                                        <p class="text-xs text-subtext-light dark:text-subtext-dark">1-5 stars</p>
+                                    </div>
+                                    <div class="text-center p-4 rounded-xl bg-white dark:bg-gray-800">
+                                        <div class="text-2xl mb-2">💚</div>
+                                        <p class="font-semibold text-sm">Emotional Impact</p>
+                                        <p class="text-xs text-subtext-light dark:text-subtext-dark">Energized to Drained</p>
+                                    </div>
+                                    <div class="text-center p-4 rounded-xl bg-white dark:bg-gray-800">
+                                        <div class="text-2xl mb-2">👋</div>
+                                        <p class="font-semibold text-sm">Who Initiated</p>
+                                        <p class="text-xs text-subtext-light dark:text-subtext-dark">You, Them, Mutual</p>
+                                    </div>
+                                    <div class="text-center p-4 rounded-xl bg-white dark:bg-gray-800">
+                                        <div class="text-2xl mb-2">💬</div>
+                                        <p class="font-semibold text-sm">Conversation Depth</p>
+                                        <p class="text-xs text-subtext-light dark:text-subtext-dark">Surface to Breakthrough</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Relationship Context -->
+            <section id="context" class="py-20 px-4 md:px-10 lg:px-40 scroll-mt-32">
+                <div class="max-w-6xl mx-auto">
+                    <div class="flex flex-col md:flex-row gap-12 items-start">
+                        <div class="md:w-1/3">
+                            <div class="sticky top-40">
+                                <div class="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center text-primary mb-6">
+                                    <span class="material-symbols-outlined text-[36px]">person_book</span>
+                                </div>
+                                <h2 class="text-3xl font-black mb-4">Complete Relationship Context</h2>
+                                <p class="text-subtext-light dark:text-subtext-dark">
+                                    Build rich profiles for each contact and never forget important details.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-6">
+                            <!-- Store What Matters -->
+                            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-100 dark:border-gray-800">
+                                <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">folder_special</span>
+                                    Store What Matters
+                                </h3>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div class="flex items-start gap-3 p-4 rounded-xl bg-background-light dark:bg-background-dark">
+                                        <span class="material-symbols-outlined text-primary">category</span>
+                                        <div>
+                                            <p class="font-semibold">Relationship Type</p>
+                                            <p class="text-sm text-subtext-light dark:text-subtext-dark">10 categories with visual icons</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3 p-4 rounded-xl bg-background-light dark:bg-background-dark">
+                                        <span class="material-symbols-outlined text-primary">handshake</span>
+                                        <div>
+                                            <p class="font-semibold">How We Met</p>
+                                            <p class="text-sm text-subtext-light dark:text-subtext-dark">Capture the story of your connection</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3 p-4 rounded-xl bg-background-light dark:bg-background-dark">
+                                        <span class="material-symbols-outlined text-primary">group</span>
+                                        <div>
+                                            <p class="font-semibold">Mutual Connections</p>
+                                            <p class="text-sm text-subtext-light dark:text-subtext-dark">People you both know</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3 p-4 rounded-xl bg-background-light dark:bg-background-dark">
+                                        <span class="material-symbols-outlined text-primary">interests</span>
+                                        <div>
+                                            <p class="font-semibold">Interests</p>
+                                            <p class="text-sm text-subtext-light dark:text-subtext-dark">What they care about</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3 p-4 rounded-xl bg-background-light dark:bg-background-dark">
+                                        <span class="material-symbols-outlined text-primary">chat</span>
+                                        <div>
+                                            <p class="font-semibold">Conversation Topics</p>
+                                            <p class="text-sm text-subtext-light dark:text-subtext-dark">Subjects to discuss next time</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3 p-4 rounded-xl bg-background-light dark:bg-background-dark">
+                                        <span class="material-symbols-outlined text-primary">cake</span>
+                                        <div>
+                                            <p class="font-semibold">Important Dates</p>
+                                            <p class="text-sm text-subtext-light dark:text-subtext-dark">Auto-imported from iOS Contacts</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Smart Note System -->
+                            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-100 dark:border-gray-800">
+                                <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">sticky_note_2</span>
+                                    Smart Note System
+                                </h3>
+                                <p class="text-subtext-light dark:text-subtext-dark mb-6">
+                                    Never forget important details with powerful note-taking:
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-sm">General</span>
+                                    <span class="px-3 py-1 rounded-full bg-pink-100 dark:bg-pink-900/30 text-sm">Personal</span>
+                                    <span class="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-sm">Professional</span>
+                                    <span class="px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/30 text-sm">Family</span>
+                                    <span class="px-3 py-1 rounded-full bg-red-100 dark:bg-red-900/30 text-sm">Important</span>
+                                    <span class="px-3 py-1 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-sm">Follow Up</span>
+                                    <span class="px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-sm">Memory</span>
+                                </div>
+                                <ul class="space-y-2 text-sm text-subtext-light dark:text-subtext-dark">
+                                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Pin important notes to the top</li>
+                                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Full-text search across all contacts</li>
+                                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check</span> Complete history preserved in timeline</li>
+                                </ul>
+                            </div>
+                            <!-- Conversation Spark -->
+                            <div class="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-primary/20">
+                                <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">lightbulb</span>
+                                    Conversation Spark Engine
+                                </h3>
+                                <p class="text-subtext-light dark:text-subtext-dark mb-4">
+                                    Never struggle with "what do I say?" again. BondBoost generates personalized conversation starters based on:
+                                </p>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-center gap-2"><span class="text-primary">•</span> Their interests and conversation topics</li>
+                                    <li class="flex items-center gap-2"><span class="text-primary">•</span> Upcoming important dates (birthdays, anniversaries)</li>
+                                    <li class="flex items-center gap-2"><span class="text-primary">•</span> How long it's been since you last talked</li>
+                                    <li class="flex items-center gap-2"><span class="text-primary">•</span> Unfinished discussions from your follow-up notes</li>
+                                    <li class="flex items-center gap-2"><span class="text-primary">•</span> The story of how you met</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Health Dashboard -->
+            <section id="dashboard" class="py-20 px-4 md:px-10 lg:px-40 bg-white dark:bg-gray-900 scroll-mt-32">
+                <div class="max-w-6xl mx-auto">
+                    <div class="flex flex-col md:flex-row gap-12 items-start">
+                        <div class="md:w-1/3">
+                            <div class="sticky top-40">
+                                <div class="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center text-primary mb-6">
+                                    <span class="material-symbols-outlined text-[36px]">monitoring</span>
+                                </div>
+                                <h2 class="text-3xl font-black mb-4">Relationship Health Dashboard</h2>
+                                <p class="text-subtext-light dark:text-subtext-dark">
+                                    Comprehensive analytics on your entire relationship portfolio.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div class="bg-background-light dark:bg-background-dark rounded-2xl p-6 border border-gray-100 dark:border-gray-800 text-center">
+                                    <div class="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+                                        <span class="text-3xl font-black text-primary">85</span>
+                                    </div>
+                                    <h4 class="font-bold mb-1">Overall Health Score</h4>
+                                    <p class="text-sm text-subtext-light dark:text-subtext-dark">0-100 score with color-coded ring</p>
+                                </div>
+                                <div class="bg-background-light dark:bg-background-dark rounded-2xl p-6 border border-gray-100 dark:border-gray-800">
+                                    <span class="material-symbols-outlined text-primary text-[28px] mb-3">show_chart</span>
+                                    <h4 class="font-bold mb-1">Monthly Activity Graph</h4>
+                                    <p class="text-sm text-subtext-light dark:text-subtext-dark">12-month visualization of reconnection trends</p>
+                                </div>
+                                <div class="bg-background-light dark:bg-background-dark rounded-2xl p-6 border border-gray-100 dark:border-gray-800">
+                                    <span class="material-symbols-outlined text-primary text-[28px] mb-3">pie_chart</span>
+                                    <h4 class="font-bold mb-1">Relationship Distribution</h4>
+                                    <p class="text-sm text-subtext-light dark:text-subtext-dark">Balance across friend types</p>
+                                </div>
+                                <div class="bg-background-light dark:bg-background-dark rounded-2xl p-6 border border-gray-100 dark:border-gray-800">
+                                    <span class="material-symbols-outlined text-primary text-[28px] mb-3">warning</span>
+                                    <h4 class="font-bold mb-1">At-Risk Contacts</h4>
+                                    <p class="text-sm text-subtext-light dark:text-subtext-dark">Everyone overdue with days count</p>
+                                </div>
+                                <div class="bg-background-light dark:bg-background-dark rounded-2xl p-6 border border-gray-100 dark:border-gray-800">
+                                    <span class="material-symbols-outlined text-primary text-[28px] mb-3">percent</span>
+                                    <h4 class="font-bold mb-1">Success Rate Tracking</h4>
+                                    <p class="text-sm text-subtext-light dark:text-subtext-dark">How often reconnection attempts succeed</p>
+                                </div>
+                                <div class="bg-background-light dark:bg-background-dark rounded-2xl p-6 border border-gray-100 dark:border-gray-800">
+                                    <span class="material-symbols-outlined text-primary text-[28px] mb-3">contacts</span>
+                                    <h4 class="font-bold mb-1">Contact Statistics</h4>
+                                    <p class="text-sm text-subtext-light dark:text-subtext-dark">Total, tracked, and monitored at a glance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Smart Reminders -->
+            <section id="reminders" class="py-20 px-4 md:px-10 lg:px-40 scroll-mt-32">
+                <div class="max-w-6xl mx-auto">
+                    <div class="flex flex-col md:flex-row gap-12 items-start">
+                        <div class="md:w-1/3">
+                            <div class="sticky top-40">
+                                <div class="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center text-primary mb-6">
+                                    <span class="material-symbols-outlined text-[36px]">notifications_active</span>
+                                </div>
+                                <h2 class="text-3xl font-black mb-4">Smart Reminders & Notifications</h2>
+                                <p class="text-subtext-light dark:text-subtext-dark">
+                                    Never let an important relationship slip through the cracks.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-6">
+                            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-100 dark:border-gray-800">
+                                <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">psychology</span>
+                                    Intelligent Smart Reminders
+                                </h3>
+                                <p class="text-subtext-light dark:text-subtext-dark mb-6">
+                                    BondBoost proactively scans your relationships every 4-12 hours and sends personalized notifications:
+                                </p>
+                                <div class="bg-background-light dark:bg-background-dark rounded-xl p-4 mb-6 border-l-4 border-primary">
+                                    <p class="text-sm italic">"You haven't talked to Sarah in 6 months"</p>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary">tune</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">Configurable Thresholds</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">Critical only, High & Critical, or All At-Risk</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary">summarize</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">Daily Digest</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">Batch multiple alerts into one notification</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary">snooze</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">Snooze Feature</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">Delay for 2 hours if you're not ready</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary">schedule</span>
+                                        <div>
+                                            <p class="font-semibold text-sm">Flexible Scheduling</p>
+                                            <p class="text-xs text-subtext-light dark:text-subtext-dark">Daily, Weekly, Bi-weekly, or Monthly</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Goals & Streaks -->
+                            <div class="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-100 dark:border-gray-800">
+                                <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">local_fire_department</span>
+                                    Goals, Streaks & Motivation
+                                </h3>
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                                    <div class="text-center">
+                                        <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-3">
+                                            <span class="material-symbols-outlined text-primary text-[28px]">flag</span>
+                                        </div>
+                                        <h4 class="font-bold text-sm mb-1">Weekly Goals</h4>
+                                        <p class="text-xs text-subtext-light dark:text-subtext-dark">Set targets with visual progress bars</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-16 h-16 rounded-full bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center mx-auto mb-3">
+                                            <span class="text-2xl">🔥</span>
+                                        </div>
+                                        <h4 class="font-bold text-sm mb-1">Daily Streaks</h4>
+                                        <p class="text-xs text-subtext-light dark:text-subtext-dark">Track consecutive days of activity</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-3">
+                                            <span class="material-symbols-outlined text-primary text-[28px]">emoji_events</span>
+                                        </div>
+                                        <h4 class="font-bold text-sm mb-1">Lifetime Stats</h4>
+                                        <p class="text-xs text-subtext-light dark:text-subtext-dark">Connections rekindled counter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Privacy First -->
+            <section id="privacy" class="py-20 px-4 md:px-10 lg:px-40 bg-white dark:bg-gray-900 scroll-mt-32">
+                <div class="max-w-6xl mx-auto">
+                    <div class="bg-gradient-to-br from-[#10221c] to-[#0a1612] rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
+                        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-primary text-[36px]">lock</span>
+                                </div>
+                                <div>
+                                    <h2 class="text-3xl font-black">Privacy & Data Security</h2>
+                                    <p class="text-slate-300">Your relationships are yours alone</p>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                                <div class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary text-[24px]">smartphone</span>
+                                    <div>
+                                        <h4 class="font-bold mb-1">All Data Stored Locally</h4>
+                                        <p class="text-sm text-slate-300">Your relationship data stays on your device</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary text-[24px]">cloud_off</span>
+                                    <div>
+                                        <h4 class="font-bold mb-1">No Cloud Sync</h4>
+                                        <p class="text-sm text-slate-300">Your data is never uploaded to external servers</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary text-[24px]">person_off</span>
+                                    <div>
+                                        <h4 class="font-bold mb-1">No Account Required</h4>
+                                        <p class="text-sm text-slate-300">Start using immediately without signing up</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary text-[24px]">visibility_off</span>
+                                    <div>
+                                        <h4 class="font-bold mb-1">No Tracking</h4>
+                                        <p class="text-sm text-slate-300">We don't collect any analytics or usage data</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="py-20 px-4 md:px-10 lg:px-40">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-black mb-6">Ready to strengthen your relationships?</h2>
+                    <p class="text-lg text-subtext-light dark:text-subtext-dark mb-8 max-w-2xl mx-auto">
+                        Download BondBoost today and start nurturing the connections that matter most.
+                    </p>
+                    <a href="https://apps.apple.com/us/app/bondboost/id6447713690"
+                        class="inline-flex items-center justify-center gap-2 rounded-xl h-14 px-8 bg-primary text-text-light text-base font-bold leading-normal transition-all hover:shadow-lg hover:shadow-primary/40 hover:-translate-y-0.5">
+                        <span class="material-symbols-outlined">ios</span>
+                        <span>Download for iOS</span>
+                    </a>
+                    <p class="text-xs text-subtext-light dark:text-subtext-dark mt-4">Free • No account required • iOS 18.5+</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-white dark:bg-gray-900 py-10 border-t border-gray-200 dark:border-gray-800">
+            <div class="max-w-6xl mx-auto px-4 md:px-10 lg:px-40">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="flex items-center gap-2">
+                        <div class="size-6 text-primary">
+                            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold">BondBoost</span>
+                    </div>
+                    <div class="flex gap-6 text-sm font-medium text-subtext-light dark:text-subtext-dark">
+                        <a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
+                        <a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
+                        <a class="hover:text-primary transition-colors" href="support.html">Support</a>
+                    </div>
+                    <p class="text-xs text-subtext-light dark:text-subtext-dark">© 2026 BondBoost Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+
